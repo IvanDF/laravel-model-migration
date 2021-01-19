@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Car;
+use App\Bike;
 
 class HomeController extends Controller
 {
@@ -13,8 +14,9 @@ class HomeController extends Controller
         // Get data from db
         $cars = Car::all();
         // dump($cars);
+        
+        $bikes = Bike::all();
 
-
-        return view('home', compact('cars'));
+        return view('home', compact('cars', 'bikes'));
     }
 }

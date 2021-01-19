@@ -14,3 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('/warehouse', 'CarController@warehouse')->name('warehouse');
+
+Route::get('/bike', 'BikeController@bike')->name('bike');
