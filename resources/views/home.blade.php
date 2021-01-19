@@ -1,25 +1,20 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main-section')
 
-        <title>Laravel</title>
+@section('main-section')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    </head>
-    <body>
-        <!-- Include main Header -->
-        @include('partials.main-header')
+<main>
 
-        <main>
-            <div class="container">
-                <h1 class="title">Ciao</h1>
+    <div class="level mt-6 container">
+        @foreach($cars as $car)
+            <div class="level-item has-text-centered">
+                <div>
+                    <h3 class="heading is-size-5">{{$car -> marca}}</h3>
+                    <p class="title">{{$car -> modello}}</p>
+                </div>
             </div>
-        </main>
-        <!-- Include main Footer -->
-        @include('partials.main-footer')
-    </body>
-</html>
+        @endforeach
+    </div>
+    
+</main>
+
+@endsection
