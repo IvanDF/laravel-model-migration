@@ -2,7 +2,7 @@
 
 @section('main-section')
 
-<main>
+<main class="hero-body">
     <div class="container">
         <h1 class="title has-text-centered mt-6 mb-1">Macchine</h1>
         <div class="level mt-3">

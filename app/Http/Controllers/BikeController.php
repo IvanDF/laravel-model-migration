@@ -11,8 +11,8 @@ class BikeController extends Controller
     {
         $bike = new Bike();
 
-        $bike->marca = 'BMW';
-        $bike->modello = 'M RR';
+        $bike->marca = 'Derbi';
+        $bike->modello = 'GPR125';
 
         $bike->save();
 
