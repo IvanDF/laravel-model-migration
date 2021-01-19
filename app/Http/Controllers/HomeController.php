@@ -15,8 +15,13 @@ class HomeController extends Controller
         $cars = Car::all();
         // dump($cars);
         
-        $bikes = Bike::all();
+        $myBike = Bike::where('marca', 'Derbi')->get();
 
-        return view('home', compact('cars', 'bikes'));
+        $otherBikes = Bike::where('marca', '<>', 'Derbi')
+            ->orderBy('marca', 'asc')
+            ->limit(5)
+            ->get();
+
+        return view('home', compact('cars', 'myBike', 'otherBikes'));
     }
 }

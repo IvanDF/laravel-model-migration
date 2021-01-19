@@ -4,7 +4,7 @@
 
 <main>
     <div class="container">
-        <h1 class="title has-text-centered mt-6">Macchine</h1>
+        <h1 class="title has-text-centered mt-6 mb-1">Macchine</h1>
         <div class="level mt-3">
             @foreach($cars as $car)
                 <div class="level-item has-text-centered">
@@ -15,9 +15,22 @@
                 </div>
             @endforeach
         </div>
-        <h1 class="title has-text-centered mt-6">Moto</h1>
+        <hr>
+        <h1 class="title has-text-centered mb-1">Moto</h1>
         <div class="level mt-3">
-            @foreach($bikes as $bike)
+            @foreach($myBike as $bike)
+                <div class="level-item has-text-centered">
+                    <div>
+                        <h3 class="heading is-size-5">{{$bike -> marca}}</h3>
+                        <p class="title">{{$bike -> modello}}</p>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+        <hr>
+        <h1 class="title has-text-centered mt-6 mb-1">Altre moto</h1>
+        <div class="level mt-3">
+            @foreach($otherBikes as $bike)
                 <div class="level-item has-text-centered">
                     <div>
                         <h3 class="heading is-size-5">{{$bike -> marca}}</h3>
