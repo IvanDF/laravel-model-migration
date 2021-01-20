@@ -39,7 +39,7 @@
                 </div>
             @endforeach
         </div> -->
-        <h1 class="title has-text-centered mt-6 mb-1">Altre moto</h1>
+        <h1 class="title has-text-centered mt-6 mb-2">Altre moto</h1>
         <div class="level mt-3">
             <div class="level-item has-text-centered" v-for="el in bikes">
                 <div>
