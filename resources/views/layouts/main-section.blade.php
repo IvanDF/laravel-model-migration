@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
     <body>
+
+    <div id="app">
         <!-- Include main Header -->
         @include('partials.main-header')
 
@@ -18,5 +20,8 @@
         
         <!-- Include main Footer -->
         @include('partials.main-footer')
+    </div>
+
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
