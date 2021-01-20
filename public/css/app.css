@@ -10155,7 +10155,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
-body {
+#app {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10163,4 +10163,6 @@ body {
 
 main {
   flex-grow: 1;
+  display: flex;
+  align-items: center;
 }

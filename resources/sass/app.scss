@@ -1,7 +1,7 @@
 //
 @import './node_modules/bulma/bulma.sass';
 
-body {
+#app {
     height: 100vh;
     display:flex;
     flex-direction: column
@@ -9,4 +9,6 @@ body {
 
 main {
     flex-grow: 1;
+    display: flex;
+    align-items: center
 }
